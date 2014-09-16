@@ -59,6 +59,12 @@ body {
   width: 7.3%;
 
   background-color: rgba(204, 204, 204, 0);
+  transition: all 250ms linear;
+}
+
+.chart__item:hover,
+.chart__item:active {
+  background:rgba(204,255,255, 0.3)
 }
 
 .chart__link,
@@ -74,8 +80,14 @@ body {
   bottom: -1.7em;
   position: absolute;
   width: 100%;
-
   text-align: center;
+  transition: color 25ms linear;
+}
+
+.chart__label:hover,
+.chart__label:focus, 
+.chart__label:active {
+  color: #red;
 }
 
 .chart__bar-wrap {
@@ -90,7 +102,6 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-
   background-color: rgba(127, 219, 255, 0.6);
 }
 
